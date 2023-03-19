@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   final ImagePicker _picker = ImagePicker();
   late List<File?> fileList = [];
   late bool btnClicked = false;
-  late File? selectedFile;
+  File? selectedFile;
 
   void getImage(source) async {
     final XFile? pickedImage = await _picker.pickImage(source: source);
